@@ -1,4 +1,4 @@
-/hello_world/target/
+target/
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -7,5 +7,3 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-/guessing_game/target/
-/variables_mutability/target/
