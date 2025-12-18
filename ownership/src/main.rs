@@ -35,6 +35,12 @@ fn main() {
     // println!("The value of s2 is: {}", s2);
 
     println!("The value of s3 is: {}", s3);
+    
+    let s4 = String::from("hello");
+    let (s5, len) = calculate_length(s4);
+    // The below line won't compile because s4 is moved to calculate_length function.
+    // println!("The value of s4 is: {}", s4);
+    println!("The length of '{}' is {}.", s5, len);
 
 }
 
@@ -53,4 +59,9 @@ fn gives_ownership() -> String {
 
 fn takes_and_gives_back(a_string: String) -> String {
     a_string
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+    let len = s.len();
+    (s, len)
 }
